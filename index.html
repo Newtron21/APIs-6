@@ -1,65 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
-  <link rel="stylesheet" href="./Assets/CSS/style.css" />
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  <title>Starmapper</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-</head>
-
-<body>
-  <!-- side section with a form fill (4 columns) -->
-  <!-- input city box with id to pull fetch location from (city or address) -->
-  <!-- place holder text would be "input city " -->
-  <!-- submit button -->
-  <!-- --possibly picking date -->
-  
-  <section class="hero is-link">
-    <div class="flex align-c hero-body">
-      <p class="title">
-        STARMAPPER
-      </p>
-      <p><center>Enter a city or address in text box below. <br> This will grab coordinates from the city you search for, <br> and display an image of a constellation <br> what it looks like in the sky</center></p>
-    </div>
-  </section>
-
-
-  <div class="columns is-fullwidth-mobile">
-    <div class="flex column is-3 submitArea padding">
-      <div class="">
-        <textarea class="userInput padding" placeholder="Input your address here"></textarea>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <title>Weather Dashboard</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  </head>
+ <!--Put header that spans across screen that says "weather dashboard"-->
+    
+  <body>
+    <header>
+      <h1>Weather Dashboard</h1>
+    </header>
+<!--put aside section that has-->
+      <!--"Search for a City:""-->
+      <!--search box-->
+      <!--button that says "search"-->
+      <!--separator line-->
+      <!--past searches-->
+    
+    <div class="columns is-fullwidth-mobile">
+      <div class="flex column is-3 submitArea padding">
+        <div class="">
+          <p>Search for a City:</p>
+          <textarea
+            class="userInput padding"
+            placeholder="Input City"
+          ></textarea>
+        </div>
+        <button class="btn" id="submitButton">Submit</button>
+        <div class="inputLocation"></div>
+        <ul class="savedSearches padding">
+        </ul>
       </div>
-      <button class="btn" id="submitButton">Submit</button>
-      <div class="inputLocation"> </div>
-      <ul class="savedSearches padding">
-        Previous Searches:
-      </ul>
-    </div>
-  
-    <!-- saved data / previous searches show up underneath the submit button  -->
-    <!-- --click old data and see previous pictures -->
-    <!-- main section (8 columns) -->
-    <!-- large picture filling up frame of data we pulled through fetch request -->
-    <!-- id for putting in the picture -->
-    <!-- display status is hidden and has an image -->
-    <div class="column is-9 pictureArea padding">
-      <div class="pictureHolder" style="display: none">
-        <p class="loading">LOADING...</p>
-        <img id="starImage" src="./Assets/Image/loading-orange.gif" />
-      </div>
-    </div>
-  </div>
-  <!--loading bar -->
-  <!-- ---underneath picture we put 2 or 3 columns that have moon/planet/sun weather pulled from that -->
-  <!-- ---same location and date-->
-</body>
-<script src="./Assets/JS/script.js"></script>
-
+<!--Main results box-->
+      <!--"CITY NAME" (DATE MM/DD/YYY) *icon of weather-->
+      <!--Temp: XXdegrees F-->
+      <!--Temp: Wind: X.XX MPH-->
+      <!--Humidity: XX%-->
+    <!--"5-Day Forecast:" (each box (do this 5 times))-->
+      <!--DATE MM/DD/YYYY-->
+      <!--*icon of weather-->
+      <!--Temp: XXdegrees F-->
+      <!--Temp: Wind: X.XX MPH-->
+      <!--Humidity: XX%-->
+    
+  </body>
+  <script src="./Assets/JS/script.js"></script>
 </html>

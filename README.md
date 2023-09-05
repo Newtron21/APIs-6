@@ -1,44 +1,40 @@
-# Starmapper
+# APis-6
 ​
 ## Description
-​
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-​
-- What was your motivation?
-- Our motivation for this project was we wanted to know what constellations are above me in the sky, as well as how to use web api calls and encorporate them into a webpage.
-- We built this project to create a fun website people can go to, input their city, and get back a constellation and what it looks like in the sky. We wanted practice with web API calls
-- The problem it solves is we have a lot of light pollution in this day and age, this webpage allows us to see constellations as well as see what stars are around them, you could do this for fun or to learn more about star maps
-- We learned how to do API fetch calls (experimenting with APIs that have no instruction), how to work together in a group and make sure we are all actively participating and learning at the same time. We learned how to work on a github repository together and make sure we werent overriding other peoples work. 
 
-​
+- My motivation was AS A traveler, I WANT to see the weather outlook for multiple cities, SO THAT I can plan a trip accordingly
+- I built this project so you could call upon web apis to see weather for different cities
+- The problem it solves is to be able to see what weather it is in multiple cities to plan accordingly
+- I learned how to implement APIs and fetch calls to be able to call in data from different apis and use it on different webpages. 
+- 
 ## Usage
-​
-Open up the webpage [webpage here](https://newtron21.github.io/Starmapper) and input your city/ address, click submit. Wait for server to return a constellation sky map. VOILA! you have a constellation image!
 
-​Here is a screenshot of what the page looks like 
-![Alt text](./Assets/Image/screenshot.jpg)
+​Here is a screenshot of what the page should look like 
+![Alt text](./Assets/Image/Demo.png)
+
+## User story
+AS A traveler
+I WANT to see the weather outlook for multiple cities
+SO THAT I can plan a trip accordingly
+
+## Acceptance Criteria
+GIVEN a weather dashboard with form inputs
+WHEN I search for a city
+THEN I am presented with current and future conditions for that city and that city is added to the search history
+WHEN I view current weather conditions for that city
+THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the the wind speed
+WHEN I view future weather conditions for that city
+THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
+WHEN I click on a city in the search history
+THEN I am again presented with current and future conditions for that city
 ​
 ## Credits
-
-[Jeremy Rapich](https://github.com/jrapich)
-
-[Elizabeth Hawkins](https://github.com/elihawkins123/)
-
-[Anna Newton](https://github.com/Newtron21/)
-
-[Jacob Maughan](https://github.com/jacslimob)
-
-[Mapquest API](https://developer.mapquest.com/documentation/geocoding-api/address/get/)
-
-[Astronomy API](https://docs.astronomyapi.com/endpoints/studio/star-chart)
-
-​
-
+N/A
 ​
 ## License
 MIT License
 
-Copyright (c) [2023] [Anna Newton, Jeremy Rapich, Elizabeth Hawkins, Jacob Maughan]
+Copyright (c) [2023] [Anna Newton]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
